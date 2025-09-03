@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Tushar Prasad Shetty — Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Tushar Prasad Shetty — Frontend Developer."
+    />
+    <meta name="theme-color" content="#0ea5e9" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container nav" role="navigation" aria-label="Main">
+        <a class="brand" href="#home">
+          <span class="brand-badge" aria-hidden>TS</span>
+          <span>Tushar Prasad Shetty</span>
+        </a>
+
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-cta">
+          <button class="btn" id="themeToggle" aria-label="Toggle dark mode">
+            🌗
+          </button>
+          <a
+            class="btn"
+            href="https://github.com/tushar1309u"
+            target="_blank"
+            rel="noopener"
+            >GitHub</a
+          >
+          <a class="btn primary" href="#contact">Hire Me</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="home" class="container">
+      <section class="hero">
+        <div class="hero-grid">
+          <div>
+            <span class="tag">Available for freelance · Remote</span>
+            <h1 class="title">
+              Hi, I'm <span class="accent">Tushar Prasad Shetty</span
+              ><br /><small class="role">Frontend Developer</small>
+            </h1>
+            <p class="subtitle">
+              Building responsive and user-friendly web apps with React.js and
+              modern UI frameworks.
+            </p>
+            <div class="hero-cta">
+              <a class="btn primary" href="#projects">View Projects</a>
+              <a
+                class="btn"
+                href="#"
+                onclick="window.location.href='mailto:shettyt37@gmail.com'"
+                >Contact</a
+              >
+            </div>
+          </div>
+
+          <div class="hero-card">
+            <img src="work.png" alt="Workspace with code on screen" />
+            <p class="muted" style="margin: 10px 0 0">
+              Frontend developer — React, JavaScript, Tailwind. Based in
+              Mangalore.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="section-header">
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-desc">A few things I’m proud of.</p>
+        </div>
+
+        <div class="grid projects" id="projectsGrid">
+          <!-- Project cards inserted by script -->
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="section-header">
+          <h2 class="section-title">Skills & Tools</h2>
+          <p class="section-desc">Core stack and tools I use daily.</p>
+        </div>
+
+        <div class="skills" id="skillsList"></div>
+      </section>
+
+      <section id="experience">
+        <div class="section-header">
+          <h2 class="section-title">Education</h2>
+          <p class="section-desc">
+            Karavali Institute of Technology, Mangalore
+          </p>
+        </div>
+
+        <div class="timeline">
+          <div class="item">
+            <h3>B.E. in Computer Science and Engineering</h3>
+            <small>Dec 2021 — May 2025 · CGPA: 7.3/10</small>
+            <p class="muted">
+              Focused on frontend development, UI, and modern web stacks.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="section-header">
+          <h2 class="section-title">Contact</h2>
+          <p class="section-desc">Reach out about projects or opportunities.</p>
+        </div>
+
+        <div class="two-col">
+          <form
+            id="contactForm"
+            name="contact"
+            method="POST"
+            data-netlify="true"
+          >
+            <input type="hidden" name="form-name" value="contact" />
+
+            <div class="two-col">
+              <input type="text" name="name" placeholder="Your name" required />
+              <input type="email" name="email" placeholder="Email" required />
+            </div>
+
+            <input
+              type="text"
+              name="company"
+              placeholder="Company (optional)"
+            />
+
+            <textarea
+              name="message"
+              placeholder="Project details, goals, and budget"
+              required
+            ></textarea>
+
+            <button type="submit" class="btn primary">Send Message</button>
+          </form>
+          <!-- <form id="contactForm">
+          <div class="two-col">
+            <input required name="name" placeholder="Your name" aria-label="Name" />
+            <input required type="email" name="email" placeholder="Email" aria-label="Email" />
+          </div>
+          <input name="company" placeholder="Company (optional)" aria-label="Company" />
+          <textarea required name="message" placeholder="Project details, goals, and budget" rows="5" aria-label="Message"></textarea>
+          <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+            <button class="btn primary" type="submit">Send Message</button>
+            <span id="formStatus" class="muted" role="status" aria-live="polite"></span>
+          </div>
+        </form> -->
+
+          <div>
+            <div class="item">
+              <h3>Contact Info</h3>
+              <p class="muted">
+                Email:
+                <a href="mailto:shettyt37@gmail.com">shettyt37@gmail.com</a
+                ><br />Phone: +91 9538054653<br />Location: Mangalore, India
+              </p>
+            </div>
+            <div class="item" style="margin-top: 12px">
+              <h3>Social</h3>
+              <p class="muted">
+                <a
+                  href="https://linkedin.com/in/tushar-shetty1309"
+                  target="_blank"
+                  >LinkedIn</a
+                >
+                ·
+                <a href="https://github.com/tushar1309u" target="_blank"
+                  >GitHub</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-row">
+        <small
+          >© <span id="year"></span> Tushar Prasad Shetty. All rights
+          reserved.</small
+        >
+        <div><a class="btn" href="#home">Back to top ↑</a></div>
+      </div>
+    </footer>
+
+    <dialog id="demoDialog" class="dialog">
+      <div class="dialog-head">
+        <strong id="demoTitle">Live Demo</strong>
+        <button class="btn" onclick="demoDialog.close()">Close</button>
+      </div>
+      <iframe
+        id="demoFrame"
+        title="Project Demo"
+        style="width: 100%; height: 65vh; border: 0"
+      ></iframe>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
