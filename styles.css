@@ -70,3 +70,34 @@ header{position:sticky;top:0;background:linear-gradient(180deg,rgba(2,6,23,.8),r
   object-fit: fit;   
   border-radius: 8px;  
 }
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column; /* stack text + image */
+    text-align: center;
+  }
+
+  .hero-text {
+    margin-bottom: 1.5rem;
+  }
+
+  .nav-links {
+    display: none; /* hide desktop nav */
+  }
+
+  .nav {
+    flex-wrap: wrap;
+  }
+
+  .projects, .skills, .experience, .contact {
+    padding: 2rem 1rem;
+  }
+
+  .two-col {
+    grid-template-columns: 1fr; /* make form 1 column */
+  }
+
+  input, textarea, button {
+    width: 100%; /* stretch across screen */
+  }
+}
