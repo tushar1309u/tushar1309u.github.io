@@ -5,28 +5,28 @@ const projects = [
     desc: "A React application to upload, crop, rotate, and filter images using HTML5 Canvas.",
     img: "edit.png",
     tech: "React, JavaScript, HTML5 Canvas, CSS3",
-    link: "https://github.com/tushar1309u/image-editor"
+    link: "https://github.com/tushar1309u"
   },
   {
     title: "Tic Tac Toe",
     desc: "An interactive two-player game with win detection and dynamic DOM updates.",
     img: "tictactoe.png",
     tech: "JavaScript, HTML5, CSS3",
-    link: "https://github.com/tushar1309u/tic-tac-toe"
+    link: "https://github.com/tushar1309u"
   },
   {
     title: "Key Press Visualizer",
     desc: "Displays key event properties (key, code, keyCode) in real-time.",
     img: "key.png",
     tech: "JavaScript, HTML5, CSS3",
-    link: "https://github.com/tushar1309u/key-code-generator"
+    link: "https://github.com/tushar1309u"
   },
   {
     title: "Amazon Clone Homepage",
     desc: "Replica of Amazon's homepage showcasing responsive UI using HTML and CSS.",
     img: "amazon1.png",
     tech: "HTML5, CSS3, Responsive Design",
-    link: "https://github.com/tushar1309u/amazon-clone"
+    link: "https://github.com/tushar1309u"
   }
 ];
 
